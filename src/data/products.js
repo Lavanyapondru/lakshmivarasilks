@@ -28,7 +28,21 @@ const getRandomOffer = () => {
 };
 
 export const products = [
- {id:2,category:"clothing",subcategory: "ethnic",name:"Women Multi Color Stripes Ethnic Dress",price: "₹1,899",mrp: "₹3,999",offer: "Buy 1 Get 1",badge:"New",image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj7Ns9hcOvTqyjwsB-AyM6fGP3Mdd0K1gXQeZgqpJWaA&s=10"},
+
+{
+  id: 101,
+  name: "Hydrating Face Serum",
+  category: "Skincare",
+  price: 199,
+  mrp: 249,
+  image: "/images/serum.jpg",
+
+  availableSizes: [
+    { label: "30 ml", price: 199, mrp: 249 },
+    { label: "50 ml", price: 299, mrp: 349 },
+    { label: "100 ml", price: 499, mrp: 599 },
+  ],
+},
   {id:14,category:"clothing",subcategory: "ethnic",name:"Elegant ethnic cotton kurta",price:"₹2,499",badge:"Bestseller",image:"https://images.jdmagicbox.com/quickquotes/images_main/women-s-ethnic-wear-q50h11c1.jpg"},
  {id:3,category:"clothing",subcategory: "lounge",name:"Everyday Kurti",price:"₹899",badge:"Popular",image:"https://ekantastudio.com/cdn/shop/files/B27A5B45-B13B-465E-BC67-09A0050BDC34_29e11d56-2b14-4cb7-9ce4-fc1b617a7ba3.png?v=1769603173"},
  {id:4,category:"clothing",subcategory: "western",name:"Soft Lounge Set",price:"₹999",badge:"Comfort",image:"https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=900&q=80"},

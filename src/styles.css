@@ -3157,7 +3157,7 @@ body {
 .about-page .about-story-image-frame::after {
   position: absolute;
   inset: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  /* border: 1px solid rgba(255, 255, 255, 0.7); */
   border-radius: 2px 2px 55px 2px;
   content: "";
   pointer-events: none;
@@ -16893,5 +16893,68 @@ html {
   .stitch-image-popup-content {
     transition: none !important;
     animation: none !important;
+  }
+}
+
+/* UPI payment app buttons */
+.upi-app-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.upi-app-button:hover {
+  transform: translateY(-1px);
+}
+
+.upi-app-icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.upi-app-icon-fallback {
+  font-size: 20px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.upi-app-button.btn-dark .upi-app-icon-fallback {
+  color: #fff;
+}
+
+.payment-option {
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+@media (max-width: 576px) {
+  .upi-app-button {
+    gap: 6px;
+    padding: 7px 9px;
+    font-size: 12px;
+  }
+
+  .upi-app-icon {
+    width: 19px;
+    height: 19px;
+  }
+
+  .checkout-modal-dialog {
+    margin: 8px;
   }
 }
